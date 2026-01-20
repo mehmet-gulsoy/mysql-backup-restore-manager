@@ -1,1 +1,5 @@
-# Prompts for copilot
+# Copilot Kullanılan Promptlar
+
+1. "Üniversitede hocamız bir yazılım projesi ödevi verdi. Senden kendi projeme yardım etmeni istiyorum."
+2. "Konum bu: Backup, Restore, Config Detaylar: Hedef: Veritabanı bakım operasyonları. Gereksinimler: Zamanlanmış .sql dökümü (dump) alma. Yedeği geri yükleme (restore) sihirbazı. my.cnf / postgresql.conf parametre düzenleyici. Bu konu hakkında detaylı bir teknik araştırma yapmanı istiyorum. 1. Bu teknolojinin/konunun temel çalışma prensipleri nelerdir? 2. En iyi uygulama yöntemleri (Best Practices) ve endüstri standartları nelerdir? 3. Benzer açık kaynak projeler ve rakipler hangileridir? 4. Kritik yapılandırma dosyaları ve parametreleri nelerdir? 5. Güvenlik açısından dikkat edilmesi gereken kritik noktalar nelerdir? Lütfen cevaplarını kaynakları ile birlikte detaylı bir Markdown raporu olarak sun."
+3. "Bu projeyi sonrasında github'a yükleyeceğim. Proje boyunca yardım aldığım yapay zekaları da belgelendireceğim. belgelendirme formatını hocamız bu şekilde istedi..."
