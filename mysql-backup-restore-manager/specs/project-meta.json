@@ -1,0 +1,33 @@
+{
+  "projectName": "mysql-backup-restore-manager",
+  "category": "Database Maintenance & Automation",
+  "author": "Mehmet Gülsoy",
+  "version": "1.0.0",
+  "description": "Windows üzerinde çalışan, MySQL için yedekleme, geri yükleme ve otomatik sistem kontrolü yapan Python tabanlı masaüstü uygulaması.",
+  "features": [
+    "MySQL veritabanı yedekleme (mysqldump)",
+    "Yedek dosyasından geri yükleme (restore)",
+    "Otomatik sistem durumu kontrolü (Auto Control Ability)",
+    "Otomatik kendi kendini test etme (Auto Test / Self-Check)",
+    "Grafik arayüz (Tkinter GUI)",
+    "Test amaçlı otomatik yedek üretimi"
+  ],
+  "requirements": {
+    "os": "Windows 10 / Windows 11",
+    "language": "Python 3.8+",
+    "database": "MySQL Server 8.0",
+    "tools": [
+      "mysqldump",
+      "mysql client"
+    ]
+  },
+  "automation": {
+    "autoControl": true,
+    "autoTest": true
+  },
+  "ui": {
+    "type": "Desktop GUI",
+    "framework": "Tkinter",
+    "style": "Simple modern interface"
+  }
+}
