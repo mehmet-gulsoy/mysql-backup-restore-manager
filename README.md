@@ -1,40 +1,51 @@
-Bu proje, açık kaynak işletim sistemleri dersi kapsamında geliştirilen bir **MySQL Backup – Restore – Config Yönetim Aracı**dır.  
-Amaç, veritabanı bakım operasyonlarını otomatik ve kullanıcı dostu bir şekilde gerçekleştirebilen bir sistem geliştirmektir.
+# MySQL Backup & Restore Manager
 
-Proje Windows işletim sistemi üzerinde, Python ve MySQL kullanılarak geliştirilmiştir.
+Bu proje, Windows işletim sistemi üzerinde çalışan MySQL veritabanları için  
+**otomatik yedek alma (backup)**, **geri yükleme (restore)** ve  
+**sistem sağlık kontrolü (self-check)** işlemlerini gerçekleştiren,  
+Python tabanlı ve grafik arayüzlü bir yönetim aracıdır.
+
+Proje, Açık Kaynak İşletim Sistemleri dersi kapsamında geliştirilmiştir.
 
 ---
 
 ## 🎯 Proje Amacı
 
-Bu projenin temel hedefleri:
+Veritabanı bakım operasyonlarını kolaylaştırmak ve otomatik hale getirmek:
 
-- MySQL veritabanlarının otomatik olarak yedeğini almak (Backup)
-- Alınan yedekleri geri yüklemek (Restore)
-- MySQL yapılandırma dosyalarını (my.cnf / my.ini) düzenleyebilmek
-- Sistem durumunu otomatik kontrol edebilmek (Auto Control Ability)
-- Kendi fonksiyonlarını test edebilen bir yapı sunmak (Auto Test Ability)
-
----
-
-## 🛠 Kullanılan Teknolojiler
-
-- **İşletim Sistemi:** Windows 10 / 11  
-- **Veritabanı:** MySQL Server 8.0  
-- **Programlama Dili:** Python 3.13  
-- **Arayüz:** Python Tkinter (basit ve modern tasarım)  
-- **Araçlar:**  
-  - mysqldump  
-  - MySQL Workbench  
+- Zamanlanabilir / manuel MySQL yedeği almak  
+- Alınan yedekleri geri yüklemek  
+- Sistem durumunu otomatik kontrol etmek (Auto Control)  
+- Kendi test mekanizmasını çalıştırmak (Auto Test / Self-Check)  
 
 ---
 
-## 📂 Proje Klasör Yapısı
+## ⚙️ Kullanılan Teknolojiler
+
+- İşletim Sistemi: Windows 10 / 11  
+- Programlama Dili: Python 3.x  
+- Veritabanı: MySQL 8.0  
+- Arayüz: Tkinter (Python GUI)  
+
+---
+
+## 📁 Proje Klasör Yapısı
 
 mysql-backup-restore-manager/
 │
-├─ researchs/ # AI araştırma çıktıları
-├─ specs/ # Teknik gereksinimler ve analiz dokümanları
-├─ src/ # Python kaynak kodları
-├─ docs/ # Proje dokümantasyonu
-└─ README.md # Proje tanıtım dosyası
+├── researchs/ # AI araştırma çıktıları
+├── specs/ # Gereksinimler ve analiz
+├── src/ # Kaynak kodlar
+│ ├── backups/ # Alınan .sql yedek dosyaları
+│ ├── tests/ # Self-check test dosyaları
+│ │ └── self_check.py
+│ ├── main.py
+│ ├── gui.py
+│ ├── backup_manager.py
+│ ├── restore_manager.py
+│ └── health_check.py
+│
+├── docs/ # Dokümantasyon ve tasarım
+│ └── design.md
+│
+└── README.md
