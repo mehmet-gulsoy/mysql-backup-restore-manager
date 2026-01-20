@@ -1,5 +1,5 @@
-import gui
 import tkinter as tk
+import gui
 import health_check
 
 
